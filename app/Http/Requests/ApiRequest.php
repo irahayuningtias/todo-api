@@ -29,4 +29,8 @@ abstract class ApiRequest extends FormRequest
             Response::HTTP_UNAUTHORIZED
         ));
     }
+    public function authorize()
+    {
+        return false;
+    }
 }
